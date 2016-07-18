@@ -20,10 +20,20 @@ var TASKS = [
             <ul>
               <li *ngFor="let t of tasks">{{ t.name }}</li>
             </ul>
+            <button type="button" (click)="onClick()"> Alert</button>
+            <ul>
+              <li *ngFor="let t of tasks" (click)="onClickTask(t)">{{ t.name }}</li>
+            </ul>
             `
 })
 
 export class AppCFor{
   title = "List of tasks";
   tasks = TASKS;
+	onClick(){
+  	alert('onClick Ok!')
+  }
+	onClickTask(task){
+	  alert(task.name)
+}
 }

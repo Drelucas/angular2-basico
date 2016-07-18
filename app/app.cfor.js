@@ -26,10 +26,16 @@ var AppCFor = (function () {
         this.title = "List of tasks";
         this.tasks = TASKS;
     }
+    AppCFor.prototype.onClick = function () {
+        alert('onClick Ok!');
+    };
+    AppCFor.prototype.onClickTask = function (task) {
+        alert(task.name);
+    };
     AppCFor = __decorate([
         core_1.Component({
             selector: 'my-app2',
-            template: "\n            <h1>{{ title }}</h1>\n            <ul>\n              <li *ngFor=\"let t of tasks\">{{ t.name }}</li>\n            </ul>\n            "
+            template: "\n            <h1>{{ title }}</h1>\n            <ul>\n              <li *ngFor=\"let t of tasks\">{{ t.name }}</li>\n            </ul>\n            <button type=\"button\" (click)=\"onClick()\"> Alert</button>\n            <ul>\n              <li *ngFor=\"let t of tasks\" (click)=\"onClickTask(t)\">{{ t.name }}</li>\n            </ul>\n            "
         }), 
         __metadata('design:paramtypes', [])
     ], AppCFor);
