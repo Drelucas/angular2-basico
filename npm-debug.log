@@ -9,8 +9,8 @@
 6 silly lifecycle angular-quickstart@0.0.1~prestart: no script for prestart, continuing
 7 info lifecycle angular-quickstart@0.0.1~start: angular-quickstart@0.0.1
 8 verbose lifecycle angular-quickstart@0.0.1~start: unsafe-perm in lifecycle true
-9 verbose lifecycle angular-quickstart@0.0.1~start: PATH: /usr/local/opt/nvm/versions/node/v6.0.0/lib/node_modules/npm/bin/node-gyp-bin:/home/nitrous/code/learning-angular2/node_modules/.bin:/usr/local/opt/nvm/versions/node/v6.0.0/bin:/usr/local/opt/nvm/versions/node/v6.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-10 verbose lifecycle angular-quickstart@0.0.1~start: CWD: /home/nitrous/code/learning-angular2
+9 verbose lifecycle angular-quickstart@0.0.1~start: PATH: /usr/local/opt/nvm/versions/node/v6.0.0/lib/node_modules/npm/bin/node-gyp-bin:/home/nitrous/code/angular2-basico/node_modules/.bin:/usr/local/opt/nvm/versions/node/v6.0.0/bin:/usr/local/opt/nvm/versions/node/v6.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+10 verbose lifecycle angular-quickstart@0.0.1~start: CWD: /home/nitrous/code/angular2-basico
 11 silly lifecycle angular-quickstart@0.0.1~start: Args: [ '-c', 'tsc && concurrently "tsc -w" "lite-server" ' ]
 12 silly lifecycle angular-quickstart@0.0.1~start: Returned: code: 2  signal: null
 13 info lifecycle angular-quickstart@0.0.1~start: Failed to exec start script
@@ -25,7 +25,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:850:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
 15 verbose pkgid angular-quickstart@0.0.1
-16 verbose cwd /home/nitrous/code/learning-angular2
+16 verbose cwd /home/nitrous/code/angular2-basico
 17 error Linux 4.2.0-35-generic
 18 error argv "/usr/local/opt/nvm/versions/node/v6.0.0/bin/node" "/usr/local/opt/nvm/versions/node/v6.0.0/bin/npm" "start"
 19 error node v6.0.0
