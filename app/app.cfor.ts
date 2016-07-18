@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 
-var TASKS = [
+var TASKS:Task[] = [
 	{id: 1, name: 'Work'},
 	{id: 2, name: 'Wash dishes'},
 	{id: 3, name: 'Take dust'},
@@ -13,27 +13,34 @@ var TASKS = [
 	{id: 10, name: 'Pay the bills'}
 ];
 
+export class Task{
+	id: number;
+  name: string;
+}
+
 @Component({
 	selector: 'my-app2',
 	template: `
             <h1>{{ title }}</h1>
             <ul>
-              <li *ngFor="let t of tasks">{{ t.name }}</li>
+              <li *ngFor="let t of tasks"(click)="onClick(t)">{{ t.name }}</li>
             </ul>
-            <button type="button" (click)="onClick()"> Alert</button>
-            <ul>
-              <li *ngFor="let t of tasks" (click)="onClickTask(t)">{{ t.name }}</li>
-            </ul>
+            <div *ngIf="selectedTask">
+              <input type="text" [(ngModel)]="selectedTask.name"/>
+            </div>
             `
 })
 
 export class AppCFor{
   title = "List of tasks";
-  tasks = TASKS;
-	onClick(){
-  	alert('onClick Ok!')
+  tasks:Task[] = TASKS;
+  selectedtTask: Task;
+  onClick(task){
+    this.selectedTask = task;
   }
-	onClickTask(task){
-	  alert(task.name)
-}
+
+//  onClick(task){
+//    alert(task.name)
+//  }
+//<li *ngFor="let t of tasks" (click)="onClick(t)">{{ t.name }}</li>
 }
